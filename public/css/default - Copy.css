@@ -1,0 +1,194 @@
+/* ========== Global Details ========== */
+
+@font-face {
+    font-family: Open Sans;
+    src: url("../fonts/OpenSans-Regular.ttf") format("opentype");
+}
+
+html, body {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #eee;
+    width: 100% !important;
+    height: 100% !important;
+    color: #000000;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+noscript {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #FF0000;
+    color: #FFF;
+    font-size: 14px;
+    z-index: 1;
+}
+
+main {
+    height: 100%;
+}
+
+/* Grid System */
+
+.row {
+    height: auto;
+    overflow: hidden;
+}
+
+.row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+[class*='col-'] {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+[class*='col-']:last-child {
+    clear: right;
+    margin-right: 0;
+}
+
+.col-lg-1 {width: calc( (100% - (24/1 - 1) * 10px) / 24 * 1 );}
+.col-lg-2 {width: calc( (100% - (24/2 - 1) * 10px) / 24 * 2 );}
+.col-lg-3 {width: calc( (100% - (24/3 - 1) * 10px) / 24 * 3 );}
+.col-lg-4 {width: calc( (100% - (24/4 - 1) * 10px) / 24 * 4 );}
+.col-lg-5 {width: calc( (100% - (24/5 - 1) * 10px) / 24 * 5 );}
+.col-lg-6 {width: calc( (100% - (24/6 - 1) * 10px) / 24 * 6 );}
+.col-lg-7 {width: calc( (100% - (24/7 - 1) * 10px) / 24 * 7 );}
+.col-lg-8 {width: calc( (100% - (24/8 - 1) * 10px) / 24 * 8 );}
+.col-lg-9 {width: calc( (100% - (24/9 - 1) * 10px) / 24 * 9 );}
+.col-lg-10 {width: calc( (100% - (24/10 - 1) * 10px) / 24 * 10 );}
+.col-lg-11 {width: calc( (100% - (24/11 - 1) * 10px) / 24 * 11 );}
+.col-lg-12 {width: calc( (100% - (24/12 - 1) * 10px) / 24 * 12 );}
+.col-lg-13 {width: calc( (100% - (24/13 - 1) * 10px) / 24 * 13 );}
+.col-lg-14 {width: calc( (100% - (24/14 - 1) * 10px) / 24 * 14 );}
+.col-lg-15 {width: calc( (100% - (24/15 - 1) * 10px) / 24 * 15 );}
+.col-lg-16 {width: calc( (100% - (24/16 - 1) * 10px) / 24 * 16 );}
+.col-lg-17 {width: calc( (100% - (24/17 - 1) * 10px) / 24 * 17 );}
+.col-lg-18 {width: calc( (100% - (24/18 - 1) * 10px) / 24 * 18 );}
+.col-lg-19 {width: calc( (100% - (24/19 - 1) * 10px) / 24 * 19 );}
+.col-lg-20 {width: calc( (100% - (24/20 - 1) * 10px) / 24 * 20 );}
+.col-lg-21 {width: calc( (100% - (24/21 - 1) * 10px) / 24 * 21 );}
+.col-lg-22 {width: calc( (100% - (24/22 - 1) * 10px) / 24 * 22 );}
+.col-lg-23 {width: calc( (100% - (24/23 - 1) * 10px) / 24 * 23 );}
+.col-lg-24 {width: calc( (100% - (24/24 - 1) * 10px) / 24 * 24 );}
+
+/* ========== Main Website Parts ========== */
+
+/* Navigation bars */
+
+#menu-bar {
+    position: relative;
+    width: 250px;
+    height: 100%;
+    background-color: #2d3e4e;
+    float: left;
+    text-align: left;
+    font-weight: bold;
+}
+
+#menu-bar li {
+    height: 60px;
+    width: 100%;
+    padding-left: 10px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#menu-bar li:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+#menu-bar li > i {
+    margin-right: 10px;
+}
+
+#menu-bar li.menu-heading {
+    color: #666;
+    background-color: transparent;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+
+/* Content */
+
+#dashboard-content {
+    position: relative;
+    width: calc(100% - 250px);
+    height: 100%;
+    float: left;
+}
+
+#dashboard-logo {
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#dashboard-user-box {
+    position: absolute;
+    display: table;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    border-top: 1px solid #CCC;
+}
+
+#user-logo-box, #user-text-box {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#user-logo-box {
+    width: 80px;
+}
+
+#user-text-box {
+    width: calc(100% - 80px);
+}
+
+.user-status {
+    display: table;
+}
+
+.user-status > div {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.user-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: lightblue;
+    margin: 0 auto;
+}
+
+.online-box {
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+.user-status-text {
+    margin-left: 10px;
+}
