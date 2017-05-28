@@ -30,14 +30,14 @@
                 <div><img src="images/medium.png" height="270" width="61" alt=""></div>
                 <span>Fair posture</span>
                 <div class="active-time fair-posture">
-                    <div>3h 47min</div>
+                    <div>2h 35min</div>
                 </div>
             </div>
             <div class="container-inner col-lg-4 thin-box">
                 <div><img src="images/bad.png" height="270" width="61" alt=""></div>
                 <span>Bad posture</span>
                 <div class="active-time bad-posture">
-                    <div>3h 47min</div>
+                    <div>1h 23min</div>
                 </div>
             </div>
             <div class="col-lg-12 medium-box" style="height: 100%;">
@@ -71,9 +71,22 @@
                     </div>
                 @endfor
             </div>
-            <div class="container-inner col-lg-6">
-                <div class="container-inner col-lg-24 thin-box">
-                    <h2>Daily Goal</h2>
+            <div class="col-lg-6">
+                <div class="title">DAILY GOAL</div>
+                <div class="container-inner col-lg-24 thin-box" id="daily-goal-box">
+                    <div class="container-fluid" id="daily-goal">
+                        @for($i = 0; $i < 5; $i++)
+                            <div class="container-fluid">
+                                <div class="col-lg-8">
+                                    <input type="checkbox" checked disabled>
+                                </div>
+                                <div class="col-lg-16">
+                                    <h2>Flotari</h2>
+                                </div>
+                            </div>
+
+                        @endfor
+                    </div>
                 </div>
             </div>
         </div>

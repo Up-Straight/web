@@ -160,7 +160,12 @@ hr {
     background-color: rgba(255,255,255,0.1);
 }
 
-#menu-bar li > i {
+#menu-bar li > span {
+    display: inline-block;
+    width: 23px;
+}
+
+#menu-bar li > i, #menu-bar li > span {
     margin-right: 10px;
 }
 
@@ -170,6 +175,10 @@ hr {
     height: 40px;
     line-height: 40px;
     width: 100%;
+}
+
+.selected {
+    color: #0DDE74 !important;
 }
 
 #dashboard-logo {
@@ -324,7 +333,7 @@ hr {
 }
 
 #dashboard-content div {
-    border-radius: 15px;
+    /*border-radius: 15px;*/
 }
 
 #dashboard-content > .container-fluid {
@@ -490,4 +499,32 @@ hr {
 .exercise-text span:first-child {
     color: #0DDE74;
     font-size: 24px;
+}
+
+#daily-goal {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#daily-goal > div {
+    overflow: hidden;
+    border-radius: 0;
+    border-bottom: 1px solid #CCC;
+}
+
+#daily-goal > div:last-child {
+    border-bottom: 0;
+}
+
+#daily-goal > div > div {
+    height: 50px;
+    line-height: 50px;
+}
+
+#daily-goal > div > div:last-child {
+    text-align: left;
+}
+
+.exercise-image {
+    width: 195px;
 }
