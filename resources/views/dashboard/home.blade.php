@@ -40,9 +40,43 @@
                     <div>1h 23min</div>
                 </div>
             </div>
-            <div class="col-lg-12 medium-box" style="height: 100%;">
-                <div class="row col-lg-24" style="height: calc(50% - 20px); background-color: #FFF;"></div>
-                <div class="col-lg-24" style="height: 50%; background-color: #FFF;"></div>
+            <div class="col-lg-12 medium-box">
+                <div class="row">
+                    <div class="col-lg-24" >
+                        <div class="col-lg-12" style="height: 100%;">
+                            <div style="display: table; height: 100%; float: right;">
+                                <div style="display: table-cell; vertical-align: middle">
+                                    <img src="images/bad-posture.png" height="auto" width="auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12" style="height: 100%;">
+                            <div style="display: table; height: 100%; float: left;">
+                                <div style="display: table-cell; vertical-align: middle; font-size: 24px; text-align: left;">
+                                    BAD POSTURE<br>AVERAGE
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-24">
+                        <div class="col-lg-12" style="height: 100%;">
+                            <div style="display: table; height: 100%; float: right;">
+                                <div style="display: table-cell; vertical-align: middle;">
+                                    <img src="images/good-posture.png" height="auto" width="auto">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12" style="height: 100%;">
+                            <div style="display: table; height: 100%; float: left; font-size: 24px; text-align: left;">
+                                <div style="display: table-cell; vertical-align: middle">
+                                    GOOD POSTURE<br>AVERAGE
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -50,42 +84,76 @@
 
         <div class="row container-fluid" id="dashboard-exercises-info">
             <div class="col-lg-18">
-                @for($i = 0; $i < 2; $i++)
-                    <div class="row">
-                        @for($j = 0; $j < 2; $j++)
-                        <div class="container-inner col-lg-12 exercise">
-                            <div class="exercise-box">
-                                <div class="exercise-image">
-                                    <img src="images/{{ $i + $j + 1 }}.png" width="auto" height="auto" alt="" style="max-height: 70px; max-width: 70px;">
+                <div class="row">
+                    <div class="container-inner col-lg-12 exercise">
+                        <div class="exercise-box">
+                            <div class="exercise-image">
+                                <img src="images/1.png" width="auto" height="auto" alt="" style="max-height: 70px; max-width: 70px;">
+                            </div>
+                            <div class="exercise-text">
+                                <div>
+                                    <span>11</span>
+                                    <span>/15</span>
                                 </div>
-                                <div class="exercise-text">
-                                    <div>
-                                        <span>{{ random_int(10, 15) }}</span>
-                                        <span>/15</span>
-                                    </div>
-                                    <div>Successful Crunches</div>
-                                </div>
+                                <div>Successful Squats</div>
                             </div>
                         </div>
-                        @endfor
                     </div>
-                @endfor
+                    <div class="container-inner col-lg-12 exercise">
+                        <div class="exercise-box">
+                            <div class="exercise-image">
+                                <img src="images/2.png" width="auto" height="auto" alt="" style="max-height: 70px; max-width: 70px;">
+                            </div>
+                            <div class="exercise-text">
+                                <div>
+                                    <span>10</span>
+                                    <span>/15</span>
+                                </div>
+                                <div>Successful Crunches</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container-inner col-lg-12 exercise">
+                        <div class="exercise-box">
+                            <div class="exercise-image">
+                                <img src="images/3.png" width="auto" height="auto" alt="" style="max-height: 70px; max-width: 70px;">
+                            </div>
+                            <div class="exercise-text">
+                                <div>
+                                    <span>14</span>
+                                    <span>/15</span>
+                                </div>
+                                <div>Successful Squat Lifts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-inner col-lg-12 exercise">
+                        <div class="exercise-box">
+                            <div class="exercise-image">
+                                <img src="images/4.png" width="auto" height="auto" alt="" style="max-height: 70px; max-width: 70px;">
+                            </div>
+                            <div class="exercise-text">
+                                <div>
+                                    <span>12</span>
+                                    <span>/15</span>
+                                </div>
+                                <div>Successful Rows</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-lg-6">
-                <div class="title">DAILY GOAL</div>
                 <div class="container-inner col-lg-24 thin-box" id="daily-goal-box">
                     <div class="container-fluid" id="daily-goal">
-                        @for($i = 0; $i < 5; $i++)
-                            <div class="container-fluid">
-                                <div class="col-lg-8">
-                                    <input type="checkbox" checked disabled>
-                                </div>
-                                <div class="col-lg-16">
-                                    <h2>Flotari</h2>
-                                </div>
+                        <div style="display: table-cell; vertical-align: middle">
+                            <div>
+                                <img src="images/daily-goal.png" width="auto" height="auto" alt="">
                             </div>
-
-                        @endfor
+                            <div style="font-weight: bold; margin-top: 30px; font-size: 24px; text-align: center;">DAILY GOAL</div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -8,8 +8,7 @@
         <ul>
             <li class="menu-heading">Main</li>
             <li class="selected"><span><img src="images/burn.png" width="auto" height="auto"></span>Activity</li>
-            <li><i class="fa fa-fw fa-user"></i>Dashboard</li>
-            <li><i class="fa fa-fw fa-user"></i>Profile</li>
+            <li><i class="fa fa-fw fa-user"></i>Profiles</li>
             <li><i class="fa fa-fw fa-cogs"></i>Settings</li>
             <li class="menu-heading">Help</li>
             <li><i class="fa fa-fw fa-envelope"></i>Contact</li>
